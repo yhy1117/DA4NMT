@@ -75,7 +75,6 @@ methods for neural machine translation]() (ACL2017)
 
 #### Regularized-based Methods
 * **CORAL**: [Return of Frustratingly Easy Domain Adaptation](https://arxiv.org/abs/1511.05547) (2015)
-    - 
 * **Deep CORAL**: [Deep CORAL: Correlation Alignment for Deep Domain Adaptation](https://arxiv.org/abs/1607.01719) (2016)
 * **JAN**: [Deep Transfer Learning with Joint Adaptation Networks](https://arxiv.org/abs/1605.06636) (2016)
 * 基于知识蒸馏的方法可实现在训练目标域模型时对其参数进行正则化，可参考Online Distilling from Best Checkpoint。
