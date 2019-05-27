@@ -30,8 +30,8 @@ Papers are ordered by theme and inside each theme by general or NMT and then by 
     - 迁移学习必读survey，涵盖了早期的领域适应方法。
 * [Deep Visual Domain Adaptation: A Survey](https://arxiv.org/abs/1802.03601) (CVPR2018)
     - 视觉领域适应的survey，内容很全，思路清晰易懂，推荐！
-* [A Survey of Domain Adaptation for Neural Machine Translation](https://www.aclweb.org/anthology/C18-1111) (ICCL2018)
-    - NMT领域适应的survey，内容丰富，就是文章写得比较差。
+* [A Survey of Domain Adaptation for Neural Machine Translation](https://www.aclweb.org/anthology/C18-1111) (COLING2018)
+    - NMT领域适应的survey，内容丰富。
 
 ## Supervised Domain Adaptation for NMT
 
@@ -42,6 +42,8 @@ Utilize in-domain/target domain parallel data.
 #### Data Selection
 * [Sentence embedding for neural machine translation domain adaptation]() (ACL2017)
     - 根据源域样本与目标域的相似性选择源域样本加入到目标域训练集中
+* [Effective domain mixing for neural machine translation]() (WMT2017)
+    - 提出了三种数据混合的方案：基于领域分类的discriminative mixing，基于对抗的discriminative mixing，以及在目标端添加领域token的target token mixing
  
 #### Data Sampling
 * [An empirical comparison of simple domain adaptation methods for neural machine translation]() (arxiv2017)
@@ -73,6 +75,7 @@ methods for neural machine translation]() (ACL2017)
 
 #### Regularized-based Methods
 * **CORAL**: [Return of Frustratingly Easy Domain Adaptation](https://arxiv.org/abs/1511.05547) (2015)
+    - 
 * **Deep CORAL**: [Deep CORAL: Correlation Alignment for Deep Domain Adaptation](https://arxiv.org/abs/1607.01719) (2016)
 * **JAN**: [Deep Transfer Learning with Joint Adaptation Networks](https://arxiv.org/abs/1605.06636) (2016)
 * 基于知识蒸馏的方法可实现在训练目标域模型时对其参数进行正则化，可参考Online Distilling from Best Checkpoint。
@@ -120,7 +123,6 @@ through multi-task learning]() (EMNLP2017)
     - RNNLM和翻译模型一起训练
 
 
-
 ## Multi-source Domain Adaptation for NMT
 #### General
 * [Domain adaptation from multiple sources via auxiliary classifiers](https://lms.comp.nus.edu.sg/sites/default/files/publication-attachments/icml09-xudong.pdf) (ICML2007)
@@ -143,6 +145,13 @@ through multi-task learning]() (EMNLP2017)
 #### NMT
 * [Domain control for neural machine translation](https://arxiv.org/pdf/1612.06140) (RANLP2017)
     - word embedding + domain embedding拼接
+* [Multi-domain neural machine translation through unsupervised adaptation]() (WMT2017)
+    - 根据test和train的相似性，调节训练算法的超参
+* [Neural machine translation training in a multi-domain scenario]() (2017)
+    - 研究了data concatenation, model stacking, data selection and multi-model
+ensemble
+* [Multi-domain neural machine translation]() (2018)
+    - 将每个领域看作一个语言对，使用multi-lingual的方式实现multi-domain NMT
 * [Multi-domain NMT with word-level context discrimination](https://www.aclweb.org/anthology/D18-1041) (EMNLP2018)
     - 对于多领域混合的语料，在encoder分别学习公有annotation和私有annotation，在deocoder端根据公有和私有context解码
 
