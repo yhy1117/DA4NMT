@@ -160,17 +160,17 @@ through multi-task learning]() (EMNLP2017)
 #### NMT
 * [Domain control for neural machine translation](https://arxiv.org/pdf/1612.06140) (RANLP2017)
     - word embedding + domain embedding拼接
-* [Multi-domain neural machine translation through unsupervised adaptation]() (WMT2017)
+* [Multi-domain neural machine translation through unsupervised adaptation](https://hermessvn.fbk.eu/svn/hermes/open/federico/papers/Amin_et.al-wmt2017.pdf) (WMT2017)
     - 根据test和train的相似性，调节训练算法的超参
-* [Neural machine translation training in a multi-domain scenario]() (2017)
+* [Neural machine translation training in a multi-domain scenario](http://alt.qcri.org/~ndurrani/pubs/DANMT.pdf) (2017)
     - 研究了data concatenation (源域数据混合), model stacking （在每个领域交替训练模型）, data selection （选择和目标域接近的源域数据） and multi-model ensemble （集成多个单源域模型），他们发现finetuing the concatenation system on in-domain data效果最好
-* [An empirical comparison of domain adaptation methods for neural machine translation]() (ACL2017)
+* [An empirical comparison of domain adaptation methods for neural machine translation](https://arxiv.org/abs/1701.03214) (ACL2017)
     - mixed-finetuning with domain tags, 先用源域数据训练模型得到目标域模型的初始化，再用源域数据和过采样的目标域数据finetuning（数据带领域标记）
-* [Effective domain mixing for neural machine translation]() (WMT2017)
+* [Effective domain mixing for neural machine translation](https://cs.stanford.edu/~rpryzant/data/papers/translation_2017.pdf) (WMT2017)
     - 提出了三种数据混合的方案：基于领域分类的discriminative mixing，基于对抗的discriminative mixing，以及在目标端添加领域token的target token mixing
-* [Multi-domain neural machine translation]() (2018)
+* [Multi-domain neural machine translation](https://arxiv.org/pdf/1805.02282.pdf) (2018)
     - 将每个领域看作一个语言对，使用multi-lingual的方式实现multi-domain NMT
-* [Multilingual and multi-domain adaptation for neural machine translation]() (2018)
+* [Multilingual and multi-domain adaptation for neural machine translation](www.anlp.jp/proceedings/annual_meeting/2018/pdf_dir/P9-7.pdf) (2018)
 * [Multi-domain NMT with word-level context discrimination](https://www.aclweb.org/anthology/D18-1041) (EMNLP2018)
     - 对于多领域混合的语料，在encoder分别学习公有annotation和私有annotation，在deocoder端根据公有和私有context解码
 
