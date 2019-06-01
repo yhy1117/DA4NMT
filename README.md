@@ -58,8 +58,10 @@ Utilize in-domain/target domain parallel data.
 #### Instance Weighting
 * [Instance weighting for neural machine translation domain adaptation]() (EMNLP2017) 
     - 根据源域和目标域的LM的cross-entropy得到样本的权重，引入目标函数中
-* [Cost weighting for neural machine translation domain adaptation]() (2017)
+* [Cost weighting for neural machine translation domain adaptation]() (ACL2017)
     - 用domain classifier的输出概率作为领域权重
+* [Sentence Weighting for Neural Machine Translation Domain Adaptation]() (COLING2018)
+    - 提供了度量一个句子和一个领域相似性的度量方案，提出了双语的JS散度
 * [Sentence selection and weighting for neural machine translation domain adaptation]() (TASLP2018)
     - 数据选择和加权的联合框架
 
@@ -180,5 +182,6 @@ through multi-task learning]() (EMNLP2017)
 * [Cross-domain Text Classification with Multiple Domains and Disparate
 Label Sets]() (ACL2016)
 * [Boosting Domain Adaptation by Discovering Latent Domains]() (CVPR2018)
+* [Domain generalization via conditional invariant representations]() (AAAI2018)
 
 # Datasets
